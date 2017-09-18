@@ -1,0 +1,131 @@
+$ancho: 100%;
+$colorletras: #ffffff;
+
+.flex-multiple-lines {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.seccion1 {
+	width: $ancho;
+	@extend .flex-multiple-lines;
+    justify-content: space-between;
+    
+}
+
+/*.clase1, .clase2, .clase3 {
+	width: 30%;
+	height: 120px;
+	margin: 20px;
+}*/
+
+.clase1 {
+	width: 30%;
+	height: 120px;
+	margin: 20px;
+}
+
+.clase2 {
+	@extend .clase1;
+}
+
+.clase3 {
+	@extend .clase1;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fondo {
+	width: $ancho;
+	height: 350px;
+	background: url("imagenes/banner.jpg");
+	background-size: cover; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
+
+}
+
+.fondo img {
+	width: 30%;
+	height: 75%;
+}
+
+.contenedor_portfolio {
+	width: $ancho;
+	height: 700px;
+	background-color: #f8693d;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contenedor_portfolio h2 {
+	color: $colorletras;
+}
+
+.contenedor_portfolio p {
+	color: $colorletras;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iconos a {
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+#main {
+    width: $ancho;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: 1;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+#main div:nth-of-type(4) {flex-grow: 1;}
+#main div:nth-of-type(5) {flex-grow: 1;}
+
+#main div img {
+	width: $ancho;
+	height: 100%;
+}
+
+.texto_sobre_mi {
+	padding: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.fa {
+	font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#main div a {
+    text-align: center;
+    text-decoration: none;
+    margin-left: 80px;
+}
